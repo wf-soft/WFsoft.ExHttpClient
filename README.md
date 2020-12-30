@@ -56,10 +56,10 @@ httpClient15.PostAsJsonAsync<T>(usr);
 
 > 下载文件
 ```
-httpClient300.ExDownloadToFileAsync(urs, savePath, CancellationToken.None);
+httpClient300.ExDownloadToFileAsync(url, savePath, CancellationToken.None);
 ```
 ```
-httpClient300.ExDownloadToFileAsync(urs, savePath, (maxSize, uploadSize, progress) => {
+httpClient300.ExDownloadToFileAsync(url, savePath, (maxSize, uploadSize, progress) => {
                 Debug.WriteLine(maxSize);
                 Debug.WriteLine(uploadSize);
                 Debug.WriteLine(progress);
